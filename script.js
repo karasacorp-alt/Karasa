@@ -723,7 +723,7 @@ function renderLocations(locations) {
 
   const mapsLinks = [
     'https://maps.google.com/?q=Jl+Kolonel+Masturi+12+Cimahi',
-    'https://maps.google.com/?q=Jl+Soekarno+Hatta+88+Bandung',
+    'https://www.google.com/maps/place/Cileunyi,+Cimekar,+Kec.+Cileunyi,+Kabupaten+Bandung,+Jawa+Barat+40623/@-6.9289389,107.7425426,19z/data=!3m1!4b1!4m6!3m5!1s0x2e68c349775dbee7:0xaf50c15568c9!8m2!3d-6.9289389!4d107.7431863!16s%2Fg%2F11c2s84qky?hl=id&entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D',
   ];
 
   grid.innerHTML = locations.map((loc, i) => `

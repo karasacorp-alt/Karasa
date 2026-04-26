@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "bgImage": "herodimsum.avif",
+    "eyebrow": "Buka hari ini · 10.00 – 21.00",
+    "stats": [
+      { "num": "4.9★", "label": "Rating rata-rata" },
+      { "num": "240+", "label": "Ulasan bintang 5" },
+      { "num": "5",    "label": "Kategori menu" }
+    ],
+    "foodCards": [
+      { "emoji": "🥟", "name": "Dimsum",  "sub": "12 varian",     "accent": false },
+      { "emoji": "🫔", "name": "Kebab",   "sub": "Jumbo size",    "accent": true  },
+      { "emoji": "🍜", "name": "Bakso",   "sub": "Kuah spesial",  "accent": false },
+      { "emoji": "🍫", "name": "Coklat",  "sub": "Lava & truffle","accent": false }
+    ],
+    "promo": {
+      "icon": "🔥",
+      "title": "Paket Kerasa — Paling laris hari ini",
+      "sub": "5 pcs dimsum + 1 minuman pilihan",
+      "price": "Rp 29k"
+    }
+  },
+  "strip": [
+    "✦ Rasanya? Kerasa.",
+    "Tersedia di GoFood & GrabFood",
+    "Booth di Cimahi & Bandung",
+    "Buka setiap hari 10–21",
+    "✦ Pesan Sekarang"
+  ],
+  "menu": [
+    { "cat": "dimsum", "emoji": "🥟", "bg": "bg-espresso", "name": "Dimsum Ayam",     "tag": { "label": "⭐ Best", "class": "tag-orange" }, "desc": "Kukus fresh tiap hari. Kulit tipis, isi penuh ayam cincang.",       "price": 18000 },
+    { "cat": "dimsum", "emoji": "🦐", "bg": "bg-espresso", "name": "Hakau Udang",     "tag": { "label": "🔥 Baru", "class": "tag-orange" }, "desc": "Udang segar, kulit translucent. Dikukus sempurna.",                "price": 22000 },
+    { "cat": "dimsum", "emoji": "🍗", "bg": "bg-espresso", "name": "Ceker Dimsum",    "tag": null,                                          "desc": "Ceker empuk, saus black bean yang bikin nagih.",                   "price": 15000 },
+    { "cat": "bakso",  "emoji": "🍜", "bg": "bg-orange",   "name": "Bakso Bakar",     "tag": null,                                          "desc": "Bakso sapi asli, dibakar dengan bumbu kecap manis.",               "price": 20000 },
+    { "cat": "bites",  "emoji": "🫔", "bg": "bg-orange",   "name": "Kebab Jumbo",     "tag": { "label": "⭐ Best", "class": "tag-orange" }, "desc": "Daging panggang, sayur crispy, saus spesial Karasa.",              "price": 25000 },
+    { "cat": "bites",  "emoji": "🌭", "bg": "bg-orange",   "name": "Sosis Panggang",  "tag": { "label": "🔥 Baru", "class": "tag-orange" }, "desc": "Sosis jumbo panggang, pilih level pedas 1–3.",                     "price": 16000 },
+    { "cat": "sweet",  "emoji": "🍫", "bg": "bg-choco",    "name": "Coklat Lava Cup", "tag": { "label": "⭐ Best", "class": "tag-orange" }, "desc": "Hangat di luar, meleleh di dalam. Siap bikin kecanduan.",          "price": 15000 },
+    { "cat": "sweet",  "emoji": "🍩", "bg": "bg-choco",    "name": "Truffle Coklat",  "tag": null,                                          "desc": "Coklat premium, lumer pas masuk mulut. 3 pcs per box.",             "price": 20000 },
+    { "cat": "sips",   "emoji": "🧋", "bg": "bg-sage",     "name": "Es Coklat Karasa","tag": { "label": "⭐ Best", "class": "tag-orange" }, "desc": "Coklat pekat, es batu, cocok bandingin rasa gurih dimsum.",        "price": 12000 },
+    { "cat": "sips",   "emoji": "🍵", "bg": "bg-sage",     "name": "Teh Tarik Hangat","tag": null,                                          "desc": "Teh kental, manis pas, cocok buat teman dimsum pagi.",              "price": 10000 }
+  ],
+  "bundles": [
+    {
+      "id": "kerasa",
+      "name": "Paket Kerasa",
+      "emoji": "🥟",
+      "desc": "Cocok buat kamu yang pengen nyobain dimsum Karasa pertama kali.",
+      "items": ["5 pcs Dimsum pilihan", "1 minuman (Es Coklat / Teh Tarik)"],
+      "price": "Rp 29.000",
+      "priceNum": 29000,
+      "featured": false,
+      "save": null,
+      "tag": null,
+      "compare": { "dimsum": "5 pcs", "kebab": "—", "minuman": "1", "cemilan": "—", "porsi": "1 orang" }
+    },
+    {
+      "id": "nampol",
+      "name": "Paket Nampol",
+      "emoji": "🫔",
+      "desc": "Kombo paling pas buat yang pengen kenyang sekaligus puas.",
+      "items": ["1 Kebab Jumbo", "1 cemilan pilihan", "1 minuman pilihan"],
+      "price": "Rp 45.000",
+      "priceNum": 45000,
+      "featured": true,
+      "save": "Hemat Rp 6.000",
+      "tag": "⭐ Paling Laris",
+      "compare": { "dimsum": "—", "kebab": "1 jumbo", "minuman": "1", "cemilan": "1", "porsi": "1 orang" }
+    },
+    {
+      "id": "manis",
+      "name": "Paket Manis",
+      "emoji": "🍫",
+      "desc": "Buat yang abis makan dan pengen happy ending yang manis.",
+      "items": ["2 cemilan coklat pilihan", "1 Es Coklat Karasa"],
+      "price": "Rp 35.000",
+      "priceNum": 35000,
+      "featured": false,
+      "save": null,
+      "tag": null,
+      "compare": { "dimsum": "—", "kebab": "—", "minuman": "1", "cemilan": "2", "porsi": "1–2 orang" }
+    },
+    {
+      "id": "ramerame",
+      "name": "Paket Rame-Rame",
+      "emoji": "👨‍👩‍👧‍👦",
+      "desc": "Solusi nonton bareng, kumpul keluarga, atau nongkrong rame-rame.",
+      "items": ["20 pcs Dimsum mix", "2 Kebab Jumbo", "4 minuman pilihan"],
+      "price": "Rp 120.000",
+      "priceNum": 120000,
+      "featured": false,
+      "save": "Hemat Rp 18.000",
+      "tag": "👨‍👩‍👧 Keluarga",
+      "compare": { "dimsum": "20 pcs", "kebab": "2 jumbo", "minuman": "4", "cemilan": "—", "porsi": "3–4 orang" }
+    }
+  ],
+  "reviews": {
+    "rating": "4.9",
+    "count": "240+",
+    "platform": "GoFood & GrabFood",
+    "bars": [
+      { "star": 5, "pct": 92 },
+      { "star": 4, "pct": 5  },
+      { "star": 3, "pct": 2  },
+      { "star": 2, "pct": 1  },
+      { "star": 1, "pct": 0  }
+    ],
+    "cards": [
+      { "stars": 5, "text": "Dimsumnya beneran nggak nipu. Isi penuh, kukus pas, sausnya nendang banget. Udah jadi langganan tetap.", "initials": "AR", "name": "Ayu Rahayu",    "platform": "GoFood · ⭐ 5.0"   },
+      { "stars": 5, "text": "Kebab jumbo-nya gede banget, anak-anak suka semua. Harga masuk akal, rasa nggak masuk akal enaknya.",   "initials": "BS", "name": "Budi Santoso",  "platform": "GrabFood · ⭐ 5.0" },
+      { "stars": 5, "text": "Coklat lava cup-nya serius juara. Pertama nyoba langsung pesan 3 cup lagi buat dibawa pulang.",         "initials": "DN", "name": "Dina Nurhayati", "platform": "GoFood · ⭐ 5.0"   }
+    ]
+  },
+  "locations": [
+    { "name": "Booth Cimahi Utara",  "address": "Jl. Kolonel Masturi No. 12, dekat Pasar Atas Baru, Cimahi", "hours": "Senin – Minggu · 10.00 – 21.00"  },
+    { "name": "Booth Bandung Timur", "address": "Jl. Soekarno Hatta No. 88, depan Hypermart, Bandung",       "hours": "Selasa – Minggu · 11.00 – 21.30" }
+  ]
+}

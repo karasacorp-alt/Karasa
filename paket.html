@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Paket Hemat — Karasa</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar" class="scrolled">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-badge"><span>K</span></div>
+        <span class="nav-logo-name">KARASA</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link active-page" href="paket.html">Paket</a>
+        <a class="nav-link" href="ulasan.html">Ulasan</a>
+        <a class="nav-link" href="lokasi.html">Lokasi</a>
+        <a class="btn btn-primary" href="#" data-action="order" style="padding:10px 22px;font-size:13px;">🛒 Order Sekarang →</a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a class="nav-link" href="index.html">Beranda</a>
+    <a class="nav-link" href="menu.html">Menu</a>
+    <a class="nav-link" href="paket.html">Paket Hemat</a>
+    <a class="nav-link" href="ulasan.html">Ulasan</a>
+    <a class="nav-link" href="lokasi.html">Lokasi</a>
+    <a class="nav-link" href="#" data-action="order" style="color:var(--orange);font-weight:800;">Order Sekarang →</a>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner fade-in">
+      <div class="page-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="page-breadcrumb-sep">›</span>
+        <span class="page-breadcrumb-current">Paket Hemat</span>
+      </div>
+      <h1 class="display page-hero-title">Paket Hemat Karasa</h1>
+      <p class="page-hero-desc">Makin banyak, makin kerasa hemat. Pilih paket yang paling cocok buat kamu — atau bawa pulang semuanya.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PAKET CONTENT ═══ -->
+<div class="paket-page section">
+  <div class="container">
+
+    <!-- Featured bundle banner (rendered by JS) -->
+    <div id="featuredBanner" class="fade-in"></div>
+
+    <!-- All bundles -->
+    <div class="paket-section-label fade-in">
+      <span class="paket-section-label-text">Semua Paket</span>
+      <div class="paket-section-label-line"></div>
+    </div>
+    <div class="paket-grid fade-in" id="paketGrid"></div>
+
+    <!-- Comparison table -->
+    <div class="paket-section-label fade-in">
+      <span class="paket-section-label-text">Perbandingan Paket</span>
+      <div class="paket-section-label-line"></div>
+    </div>
+    <div class="paket-compare fade-in">
+      <div class="paket-compare-title">Bingung milih yang mana?</div>
+      <div class="paket-compare-sub">Bandingkan isi paket sebelum order — biar nggak nyesel.</div>
+      <div style="overflow-x:auto;">
+        <table class="compare-table" id="compareTable"></table>
+      </div>
+    </div>
+
+    <!-- Tips section -->
+    <div style="margin-top: 48px;" class="fade-in">
+      <div class="paket-tips">
+        <div class="paket-tips-title">Tips Pesan Paket</div>
+        <div class="paket-tips-grid">
+          <div class="paket-tip-card">
+            <div class="paket-tip-icon">👥</div>
+            <div class="paket-tip-title">Buat 1–2 orang</div>
+            <div class="paket-tip-desc">Paket Kerasa atau Paket Nampol paling pas. Kenyang, nggak mubazir, harga terjangkau.</div>
+          </div>
+          <div class="paket-tip-card">
+            <div class="paket-tip-icon">👨‍👩‍👧‍👦</div>
+            <div class="paket-tip-title">Buat keluarga / nongkrong</div>
+            <div class="paket-tip-desc">Paket Rame-Rame sudah include 20 pcs dimsum + 2 kebab + 4 minuman. Cocok buat 3–4 orang.</div>
+          </div>
+          <div class="paket-tip-card">
+            <div class="paket-tip-icon">🍫</div>
+            <div class="paket-tip-title">Suka yang manis?</div>
+            <div class="paket-tip-desc">Paket Manis bisa jadi penutup atau camilan sore. Coklat lava cup + truffle + es coklat.</div>
+          </div>
+          <div class="paket-tip-card">
+            <div class="paket-tip-icon">💬</div>
+            <div class="paket-tip-title">Custom paket?</div>
+            <div class="paket-tip-desc">Kamu bisa tanya langsung ke booth atau DM Instagram kami untuk paket custom acara / arisan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ ORDER CTA ═══ -->
+<section id="order-cta" style="padding: 0 0 80px;">
+  <div class="container">
+    <div class="order-inner fade-in">
+      <div>
+        <h2 class="display order-title">Udah pilih paketnya?</h2>
+        <p class="order-sub">Order lewat GoFood, GrabFood, atau langsung ke booth kami.</p>
+      </div>
+      <div class="order-btns">
+        <a class="btn btn-cream" href="#" data-platform="gofood">GoFood</a>
+        <a class="btn btn-cream" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="btn btn-cream" href="#" data-platform="karasa">KarasaFood</a>
+        <a class="btn btn-ghost-light" href="index.html#location">Cari Booth</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-badge"><span>K</span></div>
+          <span class="footer-logo-name">KARASA</span>
+        </div>
+        <p class="footer-desc">Makanan yang beneran kerasa. Dimsum, bakso, kebab, cemilan, dan coklat untuk semua kalangan.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Halaman</div>
+        <a class="footer-link" href="menu.html">Menu Lengkap</a>
+        <a class="footer-link" href="paket.html">Paket Hemat</a>
+        <a class="footer-link" href="index.html#location">Lokasi Booth</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Order</div>
+        <a class="footer-link" href="#" data-platform="gofood">GoFood</a>
+        <a class="footer-link" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="footer-link" href="#">Instagram</a>
+        <a class="footer-link" href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Karasa. All rights reserved.</span>
+      <span class="footer-tagline">Rasanya? Kerasa. ✦</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ CART FLOAT ═══ -->
+<div id="cart-float">
+  <div class="cart-btn">
+    <span>🛒 Keranjang</span>
+    <div class="cart-badge" id="cartCount">0</div>
+    <span id="cartTotal" style="font-size:13px;opacity:0.85;">Rp 0</span>
+  </div>
+</div>
+
+<!-- ═══ TOAST ═══ -->
+<div class="toast" id="toast">
+  <div class="toast-dot"></div>
+  <span id="toastMsg">Ditambahkan!</span>
+</div>
+
+<!-- ═══ PAKET PAGE LOGIC ═══ -->
+<script>
+async function loadPaketPage() {
+  try {
+    const res  = await fetch('data.json');
+    const data = await res.json();
+    renderFeaturedBanner(data.bundles);
+    renderPaketGrid(data.bundles);
+    renderCompareTable(data.bundles);
+    initScrollAnimations();
+  } catch(e) {
+    console.error('Gagal load data.json:', e);
+  }
+}
+
+/* ── Featured banner ── */
+function renderFeaturedBanner(bundles) {
+  const featured = bundles.find(b => b.featured);
+  if (!featured) return;
+  document.getElementById('featuredBanner').innerHTML = `
+    <div class="paket-featured-banner">
+      <div>
+        <div class="paket-featured-eyebrow">Paket paling laris</div>
+        <div class="paket-featured-name">${featured.name}</div>
+        <div class="paket-featured-desc">${featured.desc}</div>
+        <div class="paket-featured-items">
+          ${featured.items.map(i => `<span class="paket-featured-item">✓ ${i}</span>`).join('')}
+        </div>
+        <div class="paket-featured-bottom">
+          <div class="paket-featured-price">${featured.price}</div>
+          ${featured.save ? `<span class="paket-featured-save">${featured.save}</span>` : ''}
+          <button class="btn btn-cream" style="margin-left:8px;"
+            onclick="cartAdd('${featured.name}', ${featured.priceNum}); showToast('${featured.name} ditambahkan!')">
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+      <div class="paket-featured-right">
+        <span class="paket-featured-emoji">${featured.emoji}</span>
+      </div>
+    </div>
+  `;
+}
+
+/* ── Paket cards grid ── */
+function renderPaketGrid(bundles) {
+  document.getElementById('paketGrid').innerHTML = bundles.map(b => {
+    const tagHTML    = b.tag ? `<span class="paket-card-tag ${b.featured ? 'tag-pop' : 'tag-save'}">${b.tag}</span>` : '';
+    const itemsHTML  = b.items.map(i => `<div class="paket-card-item"><div class="paket-card-item-dot"></div>${i}</div>`).join('');
+    const savingHTML = b.save ? `<div class="paket-card-saving">✓ ${b.save}</div>` : '';
+    return `
+      <div class="paket-card${b.featured ? ' paket-card-featured' : ''}">
+        <div class="paket-card-header">
+          <div class="paket-card-emoji-wrap">${b.emoji}</div>
+          ${tagHTML}
+        </div>
+        <div class="paket-card-body">
+          <div class="paket-card-name">${b.name}</div>
+          <div class="paket-card-desc">${b.desc}</div>
+          <div class="paket-card-items">${itemsHTML}</div>
+          <div class="paket-card-footer">
+            <div>
+              <div class="paket-card-price">${b.price}</div>
+              ${savingHTML}
+            </div>
+            <button class="paket-card-btn"
+              onclick="cartAdd('${b.name}', ${b.priceNum}); showToast('${b.name} ditambahkan!')">
+              Pesan →
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+/* ── Comparison table ── */
+function renderCompareTable(bundles) {
+  const rows = [
+    { key: 'dimsum',  label: 'Dimsum'      },
+    { key: 'kebab',   label: 'Kebab'       },
+    { key: 'cemilan', label: 'Cemilan'     },
+    { key: 'minuman', label: 'Minuman'     },
+    { key: 'porsi',   label: 'Cocok untuk' },
+  ];
+  const featuredId   = bundles.find(b => b.featured)?.id;
+  const headerCells  = bundles.map(b =>
+    `<th class="${b.id === featuredId ? 'featured-col' : ''}">${b.emoji} ${b.name}</th>`
+  ).join('');
+  const dataRows = rows.map(row => {
+    const cells = bundles.map(b => {
+      const val     = b.compare?.[row.key] || '—';
+      const display = val === '—'
+        ? `<span class="compare-cross">—</span>`
+        : `<span class="compare-check">✓</span> ${val}`;
+      return `<td class="${b.id === featuredId ? 'featured-col' : ''}">${display}</td>`;
+    }).join('');
+    return `<tr><td class="row-label">${row.label}</td>${cells}</tr>`;
+  }).join('');
+  const priceCells = bundles.map(b =>
+    `<td class="${b.id === featuredId ? 'featured-col' : ''}">${b.price}</td>`
+  ).join('');
+
+  document.getElementById('compareTable').innerHTML = `
+    <thead><tr><th>Isi Paket</th>${headerCells}</tr></thead>
+    <tbody>
+      ${dataRows}
+      <tr class="compare-price-row"><td class="row-label">Harga</td>${priceCells}</tr>
+    </tbody>
+  `;
+}
+</script>
+
+<!-- ═══ SCRIPT UTAMA — cart modal, qty, platform buttons ═══ -->
+<script src="script.js"></script>
+
+<script>
+/* Jalankan loadPaketPage setelah script.js siap */
+document.addEventListener('DOMContentLoaded', loadPaketPage);
+</script>
+
+</body>
+</html>

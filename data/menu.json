@@ -1,0 +1,125 @@
+{
+  "categories": [
+    { "id": "semua",   "label": "Semua"    },
+    { "id": "dimsum",  "label": "Dimsum"   },
+    { "id": "bakso",   "label": "Bakso"    },
+    { "id": "kebab",   "label": "Kebab"    },
+    { "id": "cemilan", "label": "Cemilan"  },
+    { "id": "coklat",  "label": "Coklat"   }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "cat": "dimsum",
+      "emoji": "🥟",
+      "bg": "#FEF3EC",
+      "name": "Siomay Ayam Udang",
+      "desc": "Dikukus fresh, kulit tipis, isian nggak pelit.",
+      "price": "Rp 18rb",
+      "tags": [{ "type": "best", "label": "Best Seller" }]
+    },
+    {
+      "id": 2,
+      "cat": "dimsum",
+      "emoji": "🫕",
+      "bg": "#EAF4FF",
+      "name": "Hakau Udang Spesial",
+      "desc": "Kulit transparan, isi udang besar. Nggak ada tepung pengisi.",
+      "price": "Rp 22rb",
+      "tags": [{ "type": "new", "label": "Baru" }]
+    },
+    {
+      "id": 3,
+      "cat": "dimsum",
+      "emoji": "🍤",
+      "bg": "#FFF6E0",
+      "name": "Dimsum Goreng Crispy",
+      "desc": "Renyah di luar, juicy di dalam. Makan 1 nggak akan cukup.",
+      "price": "Rp 20rb",
+      "tags": [{ "type": "best", "label": "Best Seller" }]
+    },
+    {
+      "id": 4,
+      "cat": "bakso",
+      "emoji": "🍜",
+      "bg": "#FFF0EB",
+      "name": "Bakso Mercon",
+      "desc": "Level pedasnya bisa diatur. Tapi kalau nggak kepedasan, belum kerasa.",
+      "price": "Rp 25rb",
+      "tags": [
+        { "type": "best",  "label": "Best Seller" },
+        { "type": "spicy", "label": "Pedas" }
+      ]
+    },
+    {
+      "id": 5,
+      "cat": "bakso",
+      "emoji": "🥣",
+      "bg": "#F3EEFF",
+      "name": "Bakso Urat Jumbo",
+      "desc": "Tekstur kenyal, kuah bening gurih. Satu mangkok bikin kenyang beneran.",
+      "price": "Rp 28rb",
+      "tags": []
+    },
+    {
+      "id": 6,
+      "cat": "kebab",
+      "emoji": "🌯",
+      "bg": "#EAFBF0",
+      "name": "Kebab Mozarella",
+      "desc": "Daging panggang + keju mozzarella leleh. Satu gigitan, langsung nempel di hati.",
+      "price": "Rp 30rb",
+      "tags": [{ "type": "best", "label": "Best Seller" }]
+    },
+    {
+      "id": 7,
+      "cat": "kebab",
+      "emoji": "🫔",
+      "bg": "#FFF8E8",
+      "name": "Kebab Pedas Manis",
+      "desc": "Saus rahasia Karasa — manis, pedas, bikin nambah terus.",
+      "price": "Rp 27rb",
+      "tags": [{ "type": "spicy", "label": "Pedas Manis" }]
+    },
+    {
+      "id": 8,
+      "cat": "cemilan",
+      "emoji": "🧆",
+      "bg": "#FFF0EA",
+      "name": "Cireng Isi Rujak",
+      "desc": "Crispy di luar, isi bumbu rujak asem-manis. Cemilan sore yang nggak ada tandingannya.",
+      "price": "Rp 15rb",
+      "tags": [{ "type": "best", "label": "Best Seller" }]
+    },
+    {
+      "id": 9,
+      "cat": "cemilan",
+      "emoji": "🍟",
+      "bg": "#FAFCE8",
+      "name": "Kentang Tornado",
+      "desc": "Dipotong spiral, digoreng crispy, ditabur bumbu pilihan.",
+      "price": "Rp 18rb",
+      "tags": [{ "type": "new", "label": "Baru" }]
+    },
+    {
+      "id": 10,
+      "cat": "coklat",
+      "emoji": "🍫",
+      "bg": "#F7ECD8",
+      "name": "Coklat Lumer Original",
+      "desc": "Dark chocolate yang lumer di mulut. Happy ending yang sempurna setelah makan.",
+      "price": "Rp 20rb",
+      "tags": [{ "type": "best", "label": "Best Seller" }]
+    },
+    {
+      "id": 11,
+      "cat": "coklat",
+      "emoji": "🍵",
+      "bg": "#EBF8EC",
+      "name": "Coklat Matcha",
+      "desc": "Matcha premium + white chocolate. Bitter-sweet yang bikin nagih.",
+      "price": "Rp 22rb",
+      "tags": [{ "type": "new", "label": "Baru" }]
+    }
+  ]
+}

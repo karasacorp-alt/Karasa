@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ulasan — Karasa</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-badge"><span>K</span></div>
+        <span class="nav-logo-name">KARASA</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="paket.html">Paket</a>
+        <a class="nav-link active-page" href="ulasan.html">Ulasan</a>
+        <a class="nav-link" href="lokasi.html">Lokasi</a>
+        <a class="btn btn-primary" href="#" data-action="order" style="padding:10px 22px;font-size:13px;">🛒 Order Sekarang →</a>
+      </div>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a class="nav-link" href="index.html">Beranda</a>
+    <a class="nav-link" href="menu.html">Menu</a>
+    <a class="nav-link" href="paket.html">Paket Hemat</a>
+    <a class="nav-link" href="ulasan.html">Ulasan</a>
+    <a class="nav-link" href="lokasi.html">Lokasi</a>
+    <a class="nav-link" href="#" data-action="order" style="color:var(--orange);font-weight:800;">Order Sekarang →</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner fade-in">
+      <div class="page-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="page-breadcrumb-sep">›</span>
+        <span class="page-breadcrumb-current">Ulasan</span>
+      </div>
+      <h1 class="display page-hero-title">Kata Pelanggan Karasa</h1>
+      <p class="page-hero-desc">Real customers, real reactions. Nggak ada yang direkayasa — ini pengalaman nyata dari orang-orang yang udah cobain Karasa.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ULASAN CONTENT -->
+<section class="ulasan-page section">
+  <div class="container">
+
+    <!-- Summary card — rendered by JS -->
+    <div class="ulasan-summary fade-in" id="ulasanSummary">
+      <div class="ulasan-score-big">
+        <div class="ulasan-score-num" id="ulasanScoreNum">4.9</div>
+        <div class="ulasan-score-stars">★★★★★</div>
+        <div class="ulasan-score-count" id="ulasanScoreCount">memuat...</div>
+      </div>
+      <div class="ulasan-bars" id="ulasanBars"></div>
+    </div>
+
+    <!-- Filter -->
+    <div class="ulasan-filter-bar fade-in">
+      <span class="ulasan-filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="5">★★★★★</button>
+      <button class="filter-btn" data-filter="4">★★★★</button>
+      <button class="filter-btn" data-filter="gofood">GoFood</button>
+      <button class="filter-btn" data-filter="grabfood">GrabFood</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="ulasan-grid fade-in" id="ulasanGrid"></div>
+
+    <!-- CTA tulis ulasan -->
+    <div class="fade-in" style="margin-top:48px;text-align:center;">
+      <p style="font-size:15px;color:var(--text-muted);margin-bottom:16px;">
+        Sudah pernah cobain Karasa? Tinggalkan ulasanmu!
+      </p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="#" data-platform="gofood" class="btn btn-primary" style="font-size:14px;">Tulis di GoFood</a>
+        <a href="#" data-platform="grabfood" class="btn btn-ghost" style="font-size:14px;">Tulis di GrabFood</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-badge"><span>K</span></div>
+          <span class="footer-logo-name">KARASA</span>
+        </div>
+        <p class="footer-desc">Makanan yang beneran kerasa. Dimsum, bakso, kebab, cemilan, dan coklat untuk semua kalangan.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Halaman</div>
+        <a class="footer-link" href="menu.html">Menu Lengkap</a>
+        <a class="footer-link" href="paket.html">Paket Hemat</a>
+        <a class="footer-link" href="ulasan.html">Ulasan</a>
+        <a class="footer-link" href="lokasi.html">Lokasi Booth</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Order</div>
+        <a class="footer-link" href="#" data-platform="gofood">GoFood</a>
+        <a class="footer-link" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="footer-link" href="https://instagram.com/karasa.id" target="_blank" rel="noopener">Instagram</a>
+        <a class="footer-link" href="https://tiktok.com/@karasa.id" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Karasa. All rights reserved.</span>
+      <span class="footer-tagline">Rasanya? Kerasa. ✦</span>
+    </div>
+  </div>
+</footer>
+
+<div id="cart-float">
+  <div class="cart-btn">
+    <span>🛒 Keranjang</span>
+    <div class="cart-badge" id="cartCount">0</div>
+    <span id="cartTotal" style="font-size:13px;opacity:0.85;">Rp 0</span>
+  </div>
+</div>
+<div class="toast" id="toast"><div class="toast-dot"></div><span id="toastMsg">Ditambahkan!</span></div>
+
+<script src="script.js"></script>
+<script>
+/* Extended reviews untuk halaman ulasan — tambahan di luar data.json */
+const EXTRA_REVIEWS = [
+  { stars: 5, text: 'Dimsum-nya beneran nggak nipu. Isi penuh, kukus pas, sausnya nendang banget. Udah jadi langganan tetap.', initials: 'AR', name: 'Ayu Rahayu', platform: 'GoFood · ⭐ 5.0', via: 'gofood' },
+  { stars: 5, text: 'Kebab jumbo-nya gede banget, anak-anak suka semua. Harga masuk akal, rasa nggak masuk akal enaknya.', initials: 'BS', name: 'Budi Santoso', platform: 'GrabFood · ⭐ 5.0', via: 'grabfood' },
+  { stars: 5, text: 'Coklat lava cup-nya serius juara. Pertama nyoba langsung pesan 3 cup lagi buat dibawa pulang.', initials: 'DN', name: 'Dina Nurhayati', platform: 'GoFood · ⭐ 5.0', via: 'gofood' },
+  { stars: 5, text: 'Udah order 5 kali, nggak pernah kecewa sekali pun. Konsistensinya yang bikin gue balik terus.', initials: 'RW', name: 'Reza Wijaya', platform: 'GrabFood · ⭐ 5.0', via: 'grabfood' },
+  { stars: 4, text: 'Rasanya enak banget, cuma waktu tunggu agak lama pas weekend. Tapi worth it lah.', initials: 'LH', name: 'Linda H.', platform: 'GoFood · ⭐ 4.0', via: 'gofood' },
+  { stars: 5, text: 'Paket rame-rame cocok banget buat arisan. Semua suka, nggak ada yang complain. Bookmarked!', initials: 'SW', name: 'Siti Wahyuni', platform: 'Booth langsung', via: 'all' },
+  { stars: 5, text: 'Bakso bakarnya beda dari yang lain. Bumbunya meresap, nggak cuma di permukaan.', initials: 'FA', name: 'Farhan A.', platform: 'GrabFood · ⭐ 5.0', via: 'grabfood' },
+  { stars: 5, text: 'Saya rutin pesan tiap minggu. Kualitasnya stabil, nggak pernah turun. Respect buat dapur Karasa.', initials: 'MP', name: 'Maya P.', platform: 'GoFood · ⭐ 5.0', via: 'gofood' },
+  { stars: 4, text: 'Enak dan murah untuk kualitasnya. Mau coba menu yang lain lagi minggu depan.', initials: 'GS', name: 'Gilang S.', platform: 'GoFood · ⭐ 4.0', via: 'gofood' },
+];
+
+let allReviews = [...EXTRA_REVIEWS];
+let activeFilter = 'all';
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    /* Merge reviews dari JSON + extra */
+    const jsonCards = (data.reviews.cards || []).map(c => ({
+      ...c, via: c.platform.toLowerCase().includes('gofood') ? 'gofood'
+               : c.platform.toLowerCase().includes('grab')   ? 'grabfood' : 'all'
+    }));
+    allReviews = [...jsonCards, ...EXTRA_REVIEWS];
+
+    /* Render summary */
+    document.getElementById('ulasanScoreNum').textContent   = data.reviews.rating;
+    document.getElementById('ulasanScoreCount').textContent = `dari ${data.reviews.count} ulasan di ${data.reviews.platform}`;
+
+    const barsEl = document.getElementById('ulasanBars');
+    if (barsEl) {
+      barsEl.innerHTML = data.reviews.bars.map(b => `
+        <div class="ulasan-bar-row">
+          <span class="ulasan-bar-label">${b.star}</span>
+          <div class="ulasan-bar-track">
+            <div class="ulasan-bar-fill" data-w="${b.pct}" style="width:0%"></div>
+          </div>
+          <span class="ulasan-bar-pct">${b.pct}%</span>
+        </div>
+      `).join('');
+      /* Animate bars */
+      setTimeout(() => {
+        barsEl.querySelectorAll('.ulasan-bar-fill').forEach(b => { b.style.width = b.dataset.w + '%'; });
+      }, 400);
+    }
+
+    renderUlasanCards(allReviews);
+    cartRefreshUI();
+    initLocalScrollAnim();
+    bindFilters();
+    initPlatformButtons();
+  });
+
+function renderUlasanCards(reviews) {
+  const grid = document.getElementById('ulasanGrid');
+  if (!grid) return;
+  if (!reviews.length) {
+    grid.innerHTML = '<p style="color:var(--text-muted);padding:40px 0;">Tidak ada ulasan untuk filter ini.</p>';
+    return;
+  }
+  grid.innerHTML = reviews.map(c => `
+    <div class="ulasan-card">
+      <div class="ulasan-card-header">
+        <div class="ulasan-card-stars">${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}</div>
+        <div class="ulasan-card-platform">${c.platform.split('·')[0].trim()}</div>
+      </div>
+      <p class="ulasan-card-text">"${c.text}"</p>
+      <div class="ulasan-card-author">
+        <div class="ulasan-card-avatar">${c.initials}</div>
+        <div>
+          <div class="ulasan-card-name">${c.name}</div>
+          <div class="ulasan-card-meta">${c.platform}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function bindFilters() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      activeFilter = f;
+      const filtered = f === 'all'
+        ? allReviews
+        : f === '5' ? allReviews.filter(r => r.stars === 5)
+        : f === '4' ? allReviews.filter(r => r.stars === 4)
+        : allReviews.filter(r => r.via === f);
+      renderUlasanCards(filtered);
+    });
+  });
+}
+
+function initLocalScrollAnim() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('in-view'), i * 80); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+}
+</script>
+</body>
+</html>

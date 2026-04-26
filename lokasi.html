@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lokasi Booth — Karasa</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-badge"><span>K</span></div>
+        <span class="nav-logo-name">KARASA</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="paket.html">Paket</a>
+        <a class="nav-link" href="ulasan.html">Ulasan</a>
+        <a class="nav-link active-page" href="lokasi.html">Lokasi</a>
+        <a class="btn btn-primary" href="#" data-action="order" style="padding:10px 22px;font-size:13px;">🛒 Order Sekarang →</a>
+      </div>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a class="nav-link" href="index.html">Beranda</a>
+    <a class="nav-link" href="menu.html">Menu</a>
+    <a class="nav-link" href="paket.html">Paket Hemat</a>
+    <a class="nav-link" href="ulasan.html">Ulasan</a>
+    <a class="nav-link" href="lokasi.html">Lokasi</a>
+    <a class="nav-link" href="#" data-action="order" style="color:var(--orange);font-weight:800;">Order Sekarang →</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner fade-in">
+      <div class="page-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="page-breadcrumb-sep">›</span>
+        <span class="page-breadcrumb-current">Lokasi</span>
+      </div>
+      <h1 class="display page-hero-title">Temukan Booth Karasa</h1>
+      <p class="page-hero-desc">Dua booth siap melayani kamu. Datang langsung, makan di tempat, atau order dan ambil sendiri — semua bisa.</p>
+    </div>
+  </div>
+</div>
+
+<!-- LOKASI CONTENT -->
+<section class="lokasi-page section">
+  <div class="container">
+
+    <div class="lokasi-grid fade-in" id="lokasiGrid"></div>
+
+    <!-- Info jam buka -->
+    <div class="fade-in" style="margin-top:48px;padding:28px 32px;background:var(--espresso);border-radius:var(--radius-xl);">
+      <p class="label" style="margin-bottom:12px;">Info penting</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;color:var(--cream);margin-bottom:4px;">📅 Jam Operasional</div>
+          <div style="font-size:13px;color:rgba(245,236,215,0.6);line-height:1.7;">
+            Booth Cimahi: Senin–Minggu 10.00–21.00<br>
+            Booth Bandung: Selasa–Minggu 11.00–21.30
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;color:var(--cream);margin-bottom:4px;">🛵 Delivery Area</div>
+          <div style="font-size:13px;color:rgba(245,236,215,0.6);line-height:1.7;">
+            GoFood & GrabFood tersedia<br>
+            Radius 5–8 km dari booth
+          </div>
+        </div>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;color:var(--cream);margin-bottom:4px;">📞 Ada pertanyaan?</div>
+          <div style="font-size:13px;color:rgba(245,236,215,0.6);line-height:1.7;margin-bottom:10px;">
+            Chat langsung ke tim Karasa via WhatsApp
+          </div>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"
+             style="font-family:'Nunito',sans-serif;font-weight:700;font-size:12px;color:var(--orange-lt);text-decoration:none;">
+            Chat WA →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ORDER CTA -->
+<section style="padding:0 0 80px;">
+  <div class="container">
+    <div class="order-inner fade-in">
+      <div>
+        <h2 class="display order-title">Mau order dulu?</h2>
+        <p class="order-sub">Pesan online, siap pas kamu sampai di booth.</p>
+      </div>
+      <div class="order-btns">
+        <a class="btn btn-cream" href="#" data-platform="gofood">GoFood</a>
+        <a class="btn btn-cream" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="btn btn-ghost-light" href="menu.html">Lihat Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-badge"><span>K</span></div>
+          <span class="footer-logo-name">KARASA</span>
+        </div>
+        <p class="footer-desc">Makanan yang beneran kerasa. Dimsum, bakso, kebab, cemilan, dan coklat untuk semua kalangan.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Halaman</div>
+        <a class="footer-link" href="menu.html">Menu Lengkap</a>
+        <a class="footer-link" href="paket.html">Paket Hemat</a>
+        <a class="footer-link" href="ulasan.html">Ulasan</a>
+        <a class="footer-link" href="lokasi.html">Lokasi Booth</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Order</div>
+        <a class="footer-link" href="#" data-platform="gofood">GoFood</a>
+        <a class="footer-link" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="footer-link" href="https://instagram.com/karasa.id" target="_blank" rel="noopener">Instagram</a>
+        <a class="footer-link" href="https://tiktok.com/@karasa.id" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Karasa. All rights reserved.</span>
+      <span class="footer-tagline">Rasanya? Kerasa. ✦</span>
+    </div>
+  </div>
+</footer>
+
+<div id="cart-float">
+  <div class="cart-btn">
+    <span>🛒 Keranjang</span>
+    <div class="cart-badge" id="cartCount">0</div>
+    <span id="cartTotal" style="font-size:13px;opacity:0.85;">Rp 0</span>
+  </div>
+</div>
+<div class="toast" id="toast"><div class="toast-dot"></div><span id="toastMsg">Ditambahkan!</span></div>
+
+<script src="script.js"></script>
+<script>
+/* Deteksi apakah booth sedang buka berdasarkan jam lokal */
+function isOpen(hoursStr) {
+  const now  = new Date();
+  const day  = now.getDay(); /* 0=Minggu, 1=Senin, ..., 6=Sabtu */
+  const hour = now.getHours() + now.getMinutes() / 60;
+
+  /* Cimahi: Senin-Minggu (0-6) 10-21 */
+  if (hoursStr.includes('Senin – Minggu')) return hour >= 10 && hour < 21;
+  /* Bandung: Selasa-Minggu (2-6, 0) 11-21.5 */
+  if (hoursStr.includes('Selasa – Minggu')) return day !== 1 && hour >= 11 && hour < 21.5;
+  return false;
+}
+
+const LOKASI_META = [
+  {
+    mapsUrl: 'https://maps.google.com/?q=Jl+Kolonel+Masturi+12+Cimahi',
+    waMsg:   'Halo Karasa, saya mau tanya soal Booth Cimahi Utara.',
+    tips:    'Parkir mudah. Tersedia meja makan di sekitar booth.',
+  },
+  {
+    mapsUrl: 'https://maps.google.com/?q=Jl+Soekarno+Hatta+88+Bandung',
+    waMsg:   'Halo Karasa, saya mau tanya soal Booth Bandung Timur.',
+    tips:    'Dekat area parkir Hypermart. Tutup hari Senin.',
+  },
+];
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    const grid = document.getElementById('lokasiGrid');
+    if (!grid) return;
+
+    grid.innerHTML = data.locations.map((loc, i) => {
+      const meta  = LOKASI_META[i] || {};
+      const open  = isOpen(loc.hours);
+      const badge = open
+        ? `<div class="lokasi-open-badge open"><div class="lokasi-open-dot"></div>Buka sekarang</div>`
+        : `<div class="lokasi-open-badge closed"><div class="lokasi-open-dot"></div>Tutup sekarang</div>`;
+
+      const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(meta.waMsg || 'Halo Karasa!')}`;
+
+      return `
+        <div class="lokasi-card">
+          <div class="lokasi-card-map">
+            <div class="lokasi-map-pin">
+              <div class="lokasi-pin-dot"></div>
+              <div class="lokasi-pin-line"></div>
+            </div>
+          </div>
+          <div class="lokasi-card-body">
+            <div class="lokasi-card-name">${loc.name}</div>
+            ${badge}
+            <p class="lokasi-card-addr">${loc.address}</p>
+            <div class="lokasi-card-info">
+              <div class="lokasi-info-row">
+                <span class="lokasi-info-icon">🕐</span>
+                <span class="lokasi-info-text"><strong>Jam buka:</strong> ${loc.hours}</span>
+              </div>
+              ${meta.tips ? `<div class="lokasi-info-row">
+                <span class="lokasi-info-icon">💡</span>
+                <span class="lokasi-info-text">${meta.tips}</span>
+              </div>` : ''}
+            </div>
+            <div class="lokasi-card-actions">
+              <a href="${meta.mapsUrl || '#'}" target="_blank" rel="noopener" class="lokasi-btn lokasi-btn-primary">
+                🗺️ Buka Maps
+              </a>
+              <a href="${waUrl}" target="_blank" rel="noopener" class="lokasi-btn lokasi-btn-outline">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    cartRefreshUI();
+    initLocalAnim();
+    initPlatformButtons();
+  });
+
+function initLocalAnim() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('in-view'), i * 80); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+}
+</script>
+</body>
+</html>

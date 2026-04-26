@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Menu — Karasa</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar" class="scrolled">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-badge"><span>K</span></div>
+        <span class="nav-logo-name">KARASA</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Beranda</a>
+        <a class="nav-link active-page" href="menu.html">Menu</a>
+        <a class="nav-link" href="paket.html">Paket</a>
+        <a class="nav-link" href="ulasan.html">Ulasan</a>
+        <a class="nav-link" href="lokasi.html">Lokasi</a>
+        <a class="btn btn-primary" href="#" data-action="order" style="padding:10px 22px;font-size:13px;">🛒 Order Sekarang →</a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a class="nav-link" href="index.html">Beranda</a>
+    <a class="nav-link" href="menu.html">Menu</a>
+    <a class="nav-link" href="paket.html">Paket Hemat</a>
+    <a class="nav-link" href="ulasan.html">Ulasan</a>
+    <a class="nav-link" href="lokasi.html">Lokasi</a>
+    <a class="nav-link" href="#" data-action="order" style="color:var(--orange);font-weight:800;">Order Sekarang →</a>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner fade-in">
+      <div class="page-breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="page-breadcrumb-sep">›</span>
+        <span class="page-breadcrumb-current">Menu</span>
+      </div>
+      <h1 class="display page-hero-title">Menu Karasa</h1>
+      <p class="page-hero-desc">Semua yang ada di sini dibuat fresh. Pilih sesukamu — dari dimsum sampai coklat, semuanya kerasa.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MENU CONTENT ═══ -->
+<div class="menu-page section">
+  <div class="container">
+    <div class="menu-page-layout">
+
+      <!-- Sidebar -->
+      <aside class="menu-sidebar fade-in" id="menuSidebar">
+        <div class="sidebar-label">Kategori</div>
+        <!-- Rendered by script.js -->
+      </aside>
+
+      <!-- Main -->
+      <main class="menu-main">
+        <!-- Search -->
+        <div class="menu-search-bar fade-in">
+          <span class="menu-search-icon">🔍</span>
+          <input class="menu-search-input" type="text" id="menuSearch" placeholder="Cari menu...">
+          <span class="menu-search-count" id="menuSearchCount"></span>
+        </div>
+
+        <!-- Category sections rendered by script.js -->
+        <div id="menuContent"></div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ORDER CTA ═══ -->
+<section id="order-cta" style="padding:0;">
+  <div class="container">
+    <div class="order-inner fade-in">
+      <div>
+        <h2 class="display order-title">Siap pesan?</h2>
+        <p class="order-sub">Order lewat GoFood, GrabFood, atau langsung ke booth.</p>
+      </div>
+      <div class="order-btns">
+        <a class="btn btn-cream" href="#" data-platform="gofood">GoFood</a>
+        <a class="btn btn-cream" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="btn btn-ghost-light" href="lokasi.html">Cari Booth</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-badge"><span>K</span></div>
+          <span class="footer-logo-name">KARASA</span>
+        </div>
+        <p class="footer-desc">Makanan yang beneran kerasa. Dimsum, bakso, kebab, cemilan, dan coklat untuk semua kalangan.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Menu</div>
+        <a class="footer-link" href="menu.html">Semua Menu</a>
+        <a class="footer-link" href="paket.html">Paket Hemat</a>
+        <a class="footer-link" href="lokasi.html">Lokasi Booth</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Order</div>
+        <a class="footer-link" href="#" data-platform="gofood">GoFood</a>
+        <a class="footer-link" href="#" data-platform="grabfood">GrabFood</a>
+        <a class="footer-link" href="#">Instagram</a>
+        <a class="footer-link" href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Karasa. All rights reserved.</span>
+      <span class="footer-tagline">Rasanya? Kerasa. ✦</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ CART FLOAT ═══ -->
+<div id="cart-float">
+  <div class="cart-btn">
+    <span>🛒 Keranjang</span>
+    <div class="cart-badge" id="cartCount">0</div>
+    <span id="cartTotal" style="font-size:13px;opacity:0.85;">Rp 0</span>
+  </div>
+</div>
+
+<!-- ═══ TOAST ═══ -->
+<div class="toast" id="toast">
+  <div class="toast-dot"></div>
+  <span id="toastMsg">Ditambahkan!</span>
+</div>
+
+<!-- ═══ MENU PAGE LOGIC ═══ -->
+<script>
+/* Variabel & fungsi khusus halaman menu — 
+   cart modal, qty, toast, platform buttons
+   semuanya ditangani script.js di bawah */
+
+const CATEGORIES = [
+  { id: 'dimsum', label: 'Dimsum',  emoji: '🥟', tagline: 'Dikukus, bukan dipanaskan.' },
+  { id: 'bakso',  label: 'Bakso',   emoji: '🍜', tagline: 'Kuah spesial, gigitan yang berasa.' },
+  { id: 'bites',  label: 'Bites',   emoji: '🍖', tagline: 'Gigitan yang nggak setengah-setengah.' },
+  { id: 'sweet',  label: 'Sweet',   emoji: '🍫', tagline: 'Buat yang pengen happy ending.' },
+  { id: 'sips',   label: 'Sips',    emoji: '🧋', tagline: 'Biar makin kerasa.' },
+];
+
+let allItems     = [];
+let activeCategory = 'all';
+
+async function loadMenuPage() {
+  try {
+    const res  = await fetch('data.json');
+    const data = await res.json();
+    allItems   = data.menu;
+    renderSidebar();
+    renderAllSections(allItems);
+    bindSearch();
+    initScrollAnimations();
+  } catch(e) {
+    console.error('Gagal load data.json:', e);
+    document.getElementById('menuContent').innerHTML =
+      '<p style="color:var(--text-muted);padding:40px 0;">Gagal memuat menu. Refresh halaman.</p>';
+  }
+}
+
+/* ── Sidebar ── */
+function renderSidebar() {
+  const sidebar = document.getElementById('menuSidebar');
+  const allBtn  = `
+    <button class="sidebar-cat active" data-cat="all" onclick="filterCategory('all')">
+      <span class="sidebar-cat-emoji">🍽️</span>
+      Semua Menu
+      <span class="sidebar-cat-count">${allItems.length}</span>
+    </button>
+    <div class="sidebar-divider"></div>
+  `;
+  const catBtns = CATEGORIES.map(c => {
+    const count = allItems.filter(i => i.cat === c.id).length;
+    if (!count) return '';
+    return `
+      <button class="sidebar-cat" data-cat="${c.id}" onclick="filterCategory('${c.id}')">
+        <span class="sidebar-cat-emoji">${c.emoji}</span>
+        ${c.label}
+        <span class="sidebar-cat-count">${count}</span>
+      </button>
+    `;
+  }).join('');
+  sidebar.innerHTML = `<div class="sidebar-label">Kategori</div>` + allBtn + catBtns;
+}
+
+/* ── Render sections ── */
+function renderAllSections(items) {
+  const content = document.getElementById('menuContent');
+  const countEl = document.getElementById('menuSearchCount');
+  if (countEl) countEl.textContent = items.length + ' item';
+
+  if (!items.length) {
+    content.innerHTML = `
+      <div class="menu-empty">
+        <div class="menu-empty-icon">🔍</div>
+        <div class="menu-empty-title">Nggak ketemu</div>
+        <p>Coba kata kunci lain ya.</p>
+      </div>`;
+    return;
+  }
+
+  const groups = {};
+  CATEGORIES.forEach(c => { groups[c.id] = []; });
+  items.forEach(item => { if (groups[item.cat]) groups[item.cat].push(item); });
+
+  content.innerHTML = CATEGORIES.map(c => {
+    const catItems = groups[c.id];
+    if (!catItems.length) return '';
+    return `
+      <div class="menu-category-section fade-in" id="cat-${c.id}">
+        <div class="menu-category-heading">
+          <span class="menu-category-heading-emoji">${c.emoji}</span>
+          <div>
+            <div class="menu-category-heading-title">${c.label}</div>
+            <div class="menu-category-heading-sub">${c.tagline}</div>
+          </div>
+        </div>
+        <div class="menu-items-grid">
+          ${catItems.map(buildMenuCard).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  bindMenuCardButtons();
+  initScrollAnimations();
+}
+
+/* [FIX] buildMenuCard — pakai .menu-card-footer-right untuk qty swap */
+function buildMenuCard(item) {
+  const price  = 'Rp ' + item.price.toLocaleString('id-ID');
+  const badges = item.tag ? `<span class="badge ${badgeClass(item.tag.class)}">${item.tag.label}</span>` : '';
+
+  /* cek apakah item sudah ada di cart */
+  const cart   = typeof cartLoad === 'function' ? cartLoad() : [];
+  const inCart = cart.find(i => i.name === item.name);
+  const qtyHTML = inCart && inCart.qty > 0
+    ? `<div class="menu-qty-ctrl">
+         <button class="menu-qty-btn dec" data-name="${item.name}" data-price="${item.price}">−</button>
+         <span class="menu-qty-num">${inCart.qty}</span>
+         <button class="menu-qty-btn inc" data-name="${item.name}" data-price="${item.price}">+</button>
+       </div>`
+    : `<button class="menu-card-add" data-name="${item.name}" data-price="${item.price}">+</button>`;
+
+  return `
+    <div class="menu-card" data-name="${item.name}" data-price="${item.price}">
+      <div class="menu-card-img ${item.bg}">
+        ${item.emoji}
+        <div class="menu-card-badges">${badges}</div>
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-name">${item.name}</div>
+        <div class="menu-card-desc">${item.desc}</div>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">${price}</span>
+          <div class="menu-card-footer-right">${qtyHTML}</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function badgeClass(cls) {
+  const map = { 'tag-orange': 'badge-best', 'tag-new': 'badge-new', 'tag-spicy': 'badge-spicy' };
+  return map[cls] || 'badge-best';
+}
+
+/* Bind klik pada menu-card — handle + dan −/+ qty */
+function bindMenuCardButtons() {
+  const content = document.getElementById('menuContent');
+  content.addEventListener('click', e => {
+    const addBtn = e.target.closest('.menu-card-add');
+    const qtyBtn = e.target.closest('.menu-qty-btn');
+
+    if (addBtn) {
+      cartAdd(addBtn.dataset.name, parseInt(addBtn.dataset.price));
+      refreshMenuCardQty(addBtn.dataset.name, addBtn.dataset.price);
+    }
+    if (qtyBtn) {
+      const { name, price } = qtyBtn.dataset;
+      if (qtyBtn.classList.contains('inc')) {
+        cartAdd(name, parseInt(price));
+      } else {
+        cartChangeQty(name, -1);
+      }
+      refreshMenuCardQty(name, price);
+    }
+  });
+}
+
+/* Refresh tampilan qty di .menu-card setelah perubahan */
+function refreshMenuCardQty(name, price) {
+  const card = document.querySelector(`.menu-card[data-name="${CSS.escape(name)}"]`);
+  if (!card) return;
+  const cart   = cartLoad();
+  const inCart = cart.find(i => i.name === name);
+  const right  = card.querySelector('.menu-card-footer-right');
+  if (!right) return;
+
+  if (inCart && inCart.qty > 0) {
+    right.innerHTML = `
+      <div class="menu-qty-ctrl">
+        <button class="menu-qty-btn dec" data-name="${name}" data-price="${price}">−</button>
+        <span class="menu-qty-num">${inCart.qty}</span>
+        <button class="menu-qty-btn inc" data-name="${name}" data-price="${price}">+</button>
+      </div>`;
+  } else {
+    right.innerHTML = `<button class="menu-card-add" data-name="${name}" data-price="${price}">+</button>`;
+  }
+}
+
+/* ── Filter by category ── */
+window.filterCategory = function(cat) {
+  activeCategory = cat;
+  document.querySelectorAll('.sidebar-cat').forEach(b => {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  const items = cat === 'all' ? allItems : allItems.filter(i => i.cat === cat);
+  document.getElementById('menuSearch').value = '';
+  renderAllSections(items);
+  if (cat !== 'all') {
+    setTimeout(() => {
+      const el = document.getElementById('cat-' + cat);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  }
+};
+
+/* ── Search ── */
+function bindSearch() {
+  document.getElementById('menuSearch').addEventListener('input', function() {
+    const q = this.value.toLowerCase().trim();
+    if (!q) {
+      const base = activeCategory === 'all' ? allItems : allItems.filter(i => i.cat === activeCategory);
+      renderAllSections(base);
+      return;
+    }
+    renderAllSections(allItems.filter(i =>
+      i.name.toLowerCase().includes(q) || i.desc.toLowerCase().includes(q)
+    ));
+  });
+}
+</script>
+
+<!-- ═══ SCRIPT UTAMA — cart modal, qty, platform buttons ═══ -->
+<script src="script.js"></script>
+
+<script>
+/* Jalankan loadMenuPage setelah script.js siap */
+document.addEventListener('DOMContentLoaded', loadMenuPage);
+</script>
+
+</body>
+</html>

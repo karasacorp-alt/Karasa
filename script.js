@@ -503,21 +503,62 @@ function renderHeroCards(hero) {
   const grid = document.querySelector('.hero-cards');
   if (!grid) return;
 
-  grid.innerHTML = hero.foodCards.map(c => `
-    <div class="food-card${c.accent ? ' accent' : ''}">
-      <span class="food-card-emoji">${c.emoji}</span>
-      <div class="food-card-name">${c.name}</div>
-      <div class="food-card-sub">${c.sub}</div>
-    </div>
-  `).join('') + `
-    <div class="hero-promo">
+  /* Map nama card ke URL tujuan */
+  const CARD_LINKS = {
+    'dimsum' : 'menu.html?cat=dimsum',
+    'bakso'  : 'menu.html?cat=bakso',
+    'bites'  : 'menu.html?cat=bites',
+    'kebab'  : 'menu.html?cat=bites',
+    'coklat' : 'menu.html?cat=sweet',
+    'sweet'  : 'menu.html?cat=sweet',
+    'sips'   : 'menu.html?cat=sips',
+    'paket'  : 'paket.html',
+    'bundel' : 'paket.html',
+  };
+
+  function getCardLink(name) {
+    const key = (name || '').toLowerCase().trim();
+    for (const [k, v] of Object.entries(CARD_LINKS)) {
+      if (key.includes(k)) return v;
+    }
+    return 'menu.html';
+  }
+
+  grid.innerHTML = hero.foodCards.map(c => {
+    const href = getCardLink(c.name);
+    return `
+      <a class="food-card${c.accent ? ' accent' : ''}" href="${href}" aria-label="Lihat ${c.name}">
+        <span class="food-card-emoji">${c.emoji}</span>
+        <div class="food-card-name">${c.name}</div>
+        <div class="food-card-sub">${c.sub}</div>
+      </a>
+    `;
+  }).join('') + `
+    <a class="hero-promo" href="paket.html" aria-label="Lihat paket">
       <div>
         <div class="hero-promo-info">${hero.promo.icon} ${hero.promo.title}</div>
         <div class="hero-promo-sub">${hero.promo.sub}</div>
       </div>
       <div class="hero-promo-price">${hero.promo.price}</div>
-    </div>
+    </a>
   `;
+
+  /* Inject style food-card sebagai link */
+  if (!document.getElementById('food-card-link-style')) {
+    const s = document.createElement('style');
+    s.id = 'food-card-link-style';
+    s.textContent = `
+      a.food-card, a.hero-promo {
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.15s;
+      }
+      a.food-card:hover  { transform: translateY(-4px) scale(1.03); opacity: 0.93; }
+      a.hero-promo:hover { opacity: 0.88; transform: translateY(-2px); }
+      a.food-card:active { transform: scale(0.97); }
+    `;
+    document.head.appendChild(s);
+  }
 }
 
 /* ─────────────────────────────────────────

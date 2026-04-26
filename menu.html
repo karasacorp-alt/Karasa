@@ -368,8 +368,34 @@ function bindSearch() {
 <script src="script.js"></script>
 
 <script>
-/* Jalankan loadMenuPage setelah script.js siap */
-document.addEventListener('DOMContentLoaded', loadMenuPage);
+/* Jalankan loadMenuPage setelah script.js siap, lalu apply URL filter */
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadMenuPage();
+  applyUrlCategoryFilter();
+});
+
+/* Baca ?cat=dimsum dari URL dan aktifkan filter otomatis */
+function applyUrlCategoryFilter() {
+  const params = new URLSearchParams(window.location.search);
+  const cat    = params.get('cat');
+  if (!cat) return;
+
+  /* Tunggu sidebar selesai render lalu klik tombol kategorinya */
+  const tryFilter = (attempts = 0) => {
+    const btn = document.querySelector(`.sidebar-cat[data-cat="${cat}"]`);
+    if (btn) {
+      btn.click();
+      /* Scroll smooth ke section kategori */
+      setTimeout(() => {
+        const section = document.getElementById('cat-' + cat);
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 120);
+    } else if (attempts < 10) {
+      setTimeout(() => tryFilter(attempts + 1), 100);
+    }
+  };
+  tryFilter();
+}
 </script>
 
 </body>
